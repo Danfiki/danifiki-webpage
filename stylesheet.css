@@ -1,8 +1,53 @@
+div {
+    /* border: solid 1px red; */
+}
+
 body {
     background-color: #0F1320;
     color: #E3E1EC;
+    
+    display: flex;
+    flex-direction: column;
 }
 
+/*Header*/
 .C-header {
-    background-color: #0F1320
+    background-color: #181D2E;
+    
+    display: flex;
+    flex-direction: column;
 }
+
+.C-topHeader, .C-bottomHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+
+/*Main*/
+
+.C-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.C-cards, .C-subtext {
+    display: flex;
+    flex-direction: row;
+    gap: 16px
+}
+
+
+.C-quote {
+    background-color: #181D2E;
+}
+
+.C-field {
+   background-color: #1F2539;
+
+   display: flex;
+   flex-direction: row;
+}
+
