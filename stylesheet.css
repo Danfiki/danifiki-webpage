@@ -1,29 +1,91 @@
-div {
-    /* border: solid 1px red; */
+div > * {
+    border: solid 1px red;
 }
 
 body {
     background-color: #0F1320;
     color: #E3E1EC;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
     display: flex;
     flex-direction: column;
 }
 
-/*Header*/
-.C-header {
+
+/* Alignment */
+/* Header */
+.C-header {    
     background-color: #181D2E;
-    
+
     display: flex;
     flex-direction: column;
 }
 
-.C-topHeader, .C-bottomHeader {
+/*TopHeader*/
+.C-topHeader{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20% 0 20%;
+}
+.C-topHeader ol {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
     gap: 16px;
 }
+
+/* BottomHeader */
+.C-bottomHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.C-bottomLeft, .C-bottomRight {
+    flex: 0 0 25%;
+}
+.C-bottomLeft{
+    margin-left: 20%;
+    flex: 0 1 25%;
+}
+
+.buttonFill {
+    border: solid 1px #3E9C80;
+    background-color: #6FD9B6;
+    color: #11292A;
+    padding: 6px 32px;
+    border-radius: 6px;
+    transition: background-color 0.6s ease;
+
+    cursor: pointer;
+    box-shadow: 0 0 10px #98E6CC;
+    transition: box-shadow 0.6s ease;
+}
+
+.buttonFill:hover {
+ background-color: #98E6CC;
+    box-shadow: 0 0 10px #E3E1EC, 
+                0 0 10px #E3E1EC;
+
+}
+
+.C-bottomRight{
+    margin-right: 20%;
+}
+
+.image-Style {
+    border: solid 1px #E3E1EC;
+    padding: 75px 150px;
+    background-color: #1F2539;
+}
+
+.h1TitleWhite {
+    font-weight: 900;
+    font-size: 36px;
+}
+
 
 
 /*Main*/
