@@ -1,27 +1,30 @@
-div > * {
-    border: solid 1px red;
-}
+
 
 body {
-    background-color: #0F1320;
+    background-color: #0B0D14;
     color: #E3E1EC;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
     display: flex;
     flex-direction: column;
+
+    /* else Lines appear around divs... */
+    padding:0;
+    margin:0;
 }
 
 
 /* Alignment */
 /* Header */
 .C-header {    
-    background-color: #181D2E;
+    background-color: #1C212E;
 
     display: flex;
     flex-direction: column;
 }
 
 /*TopHeader*/
+/* Alignment ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .C-topHeader{
     display: flex;
     flex-direction: row;
@@ -37,12 +40,15 @@ body {
 }
 
 /* BottomHeader */
+/* Alignment ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .C-bottomHeader{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 64px 0px 64px 0px;
 }
+
 .C-bottomLeft, .C-bottomRight {
     flex: 0 0 25%;
 }
@@ -51,6 +57,110 @@ body {
     flex: 0 1 25%;
 }
 
+.C-bottomLeft * {
+    margin-bottom: 6px;
+}
+
+/* Button Alignment*/
+.buttonFill {
+    margin-top: 4px;
+}
+
+.C-bottomRight{
+    margin-right: 20%;
+}
+
+
+/*Main*/
+/* Alignment ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.C-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.C-cards, .C-subtext {
+    display: flex;
+    flex-direction: row;
+    gap: 16px
+}
+
+.C-h2TitleBlack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.C-cards, .C-subtext {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.C-subtext {
+    margin-bottom: 128px;
+}
+
+.card {
+    margin-top: 64px;
+    margin-bottom: 12px;
+}
+.subText {
+    flex: 0 1 150px;
+}
+
+/* Alignment */
+/* QUOTE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~**/
+.C-quote {
+    display: flex;
+    padding: 128px;
+    flex-direction: column;
+}
+
+.quote-1, .quote-2 { 
+    flex: 0 1 auto;
+    max-width: 800px;
+}
+
+.quote-1, .quote-2 {
+    align-self: center;
+}
+
+.quote-2 {
+    margin-left: 500px;
+}
+
+/* Alignment */
+/* FIELD  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.C-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+}
+
+.C-field-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 128px;
+}
+
+/* Alignment */
+/* FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.C-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+
+
+/* Style~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .buttonFill {
     border: solid 1px #3E9C80;
     background-color: #6FD9B6;
@@ -70,11 +180,7 @@ body {
                 0 0 10px #E3E1EC;
 
 }
-
-.C-bottomRight{
-    margin-right: 20%;
-}
-
+/* Left Side */
 .image-Style {
     border: solid 1px #E3E1EC;
     padding: 75px 150px;
@@ -83,33 +189,80 @@ body {
 
 .h1TitleWhite {
     font-weight: 900;
-    font-size: 36px;
+    font-size: 50px;
 }
 
-
-
-/*Main*/
-
-.C-main {
-    display: flex;
-    flex-direction: column;
+.h2TitleBlack {
+    font-weight: 900;
+    font-size: 30px;
+    padding: 30px;
+    color: #B2B3CC;
 }
 
-.C-cards, .C-subtext {
-    display: flex;
-    flex-direction: row;
-    gap: 16px
-}
+.card {
+    border: solid 1px #7DF0C8;
+    border-radius: 12px;
+    padding: 60px;
 
+}
 
 .C-quote {
-    background-color: #181D2E;
+    background-color: #242A3A
 }
+
+.quote-1{
+    font-size: 32px;
+    font-weight: 100;
+    font-style: italic;
+    color: #ECEAF4;
+
+}
+
+.quote-2 {
+    font-size: 16px;
+    font-weight: 1000;
+    color: #ECEAF4;
+}
+
+.C-field-content {
+     background-color: #1C212E;
+     padding: 12px 78px 12px 78px;
+     border-radius: 12px;
+}
+
 
 .C-field {
-   background-color: #1F2539;
-
-   display: flex;
-   flex-direction: row;
+    color: #B2B3CC;
 }
 
+.h3TitleWhite{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.t2 {
+    font-size: 12px;
+}
+
+.buttonNoFill{
+
+    background-color: #1C212E;
+    padding: 3px 18px;
+    color: #ECEAF4;
+    border-color: #ECEAF4;
+    border-radius: 6px;
+}
+
+.C-footer {
+    background-color: #1C212E;
+}
+
+.textWhite {
+    word-spacing: 8px;
+}
+
+
+/* 
+This is so dog ass written... 
+*/
